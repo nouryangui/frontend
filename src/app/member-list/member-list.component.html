@@ -1,0 +1,22 @@
+<table border="1px">
+    <thead>
+    <tr>
+      <td>ID</td>
+      <td>CIN</td>
+      <td>Name</td>
+      <td>Type</td>
+      <td>CV</td>
+      <td>created Date</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let member of members; let index= index;">
+      <td>{{member.id}}</td>
+      <td>{{member.cin}}</td>
+      <td>{{member.name}}</td>
+      <td>{{member.type}}</td>
+      <td>{{member.cv}}</td>
+      <td>{{member.createdDate | date :'d MMMM y, HH:mm'}}</td>
+    </tr>
+    </tbody>
+</table>
